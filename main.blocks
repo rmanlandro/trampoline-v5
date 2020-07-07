@@ -1,0 +1,103 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="SpriteKindLegacy" id="d$tlK2!@YChU_b(#GpeF">0Player</variable><variable type="SpriteKindLegacy" id="%HgF$,8L08yC}U$$YQb0">1Enemy</variable><variable type="SpriteKindLegacy" id="?hxq0jI[0Byo(VQ!TSR6">2Trampoline</variable><variable type="SpriteKindLegacy" id="s#gA;K9JijgguFB[3m-I">3Wall</variable><variable type="SpriteKindLegacy" id="jTj:64]~NJO3rCxj$nM:">4Projectile</variable><variable type="SpriteKindLegacy" id="Ke~vJYwtz}#(Aoddx0pw">5Food</variable><variable id="H~AA?%m8$S%-Ewu:L09U">sprite</variable><variable id="qyOyi55oGK+G#qGLK.{p">otherSprite</variable><variable id="}S!vvL7D]DKuU4{,EJve">player</variable><variable id=";J0b9wZ[Gt!d(?]$|b@E">trampoline</variable><variable id="$;`Tpz`gE`[Ve)ve`F7.">mySprite</variable></variables><block type="pxt-on-start" x="10" y="10"><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="}S!vvL7D]DKuU4{,EJve">player</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . e e e e e e . . . . . . 
+. . . e e e e e e e e . . . . . 
+. . . e f f d d f f d . . . . . 
+. . . d f 1 d d 1 f d . . . . . 
+. . . d d d d d d d d . . . . . 
+. . . d d f d d f d d . . . . . 
+. d d . d d f f d d . d d . . . 
+. 4 4 . . d d d d . . 4 4 . . . 
+. 4 4 4 4 4 4 4 4 4 4 4 4 . . . 
+. . 4 4 4 4 4 4 4 4 4 4 4 . . . 
+. . . 4 4 4 4 4 4 4 4 4 . . . . 
+. . . . 8 8 8 8 8 8 8 . . . . . 
+. . . . 8 8 8 . 8 8 8 . . . . . 
+. . . . 8 8 8 . 8 8 8 . . . . . 
+. . . . 8 8 8 . 8 8 8 . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritetype"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="Sprite_blockCombine_set"><field name="property">Sprite.ay@set</field><value name="mySprite"><block type="variables_get"><field name="VAR" id="}S!vvL7D]DKuU4{,EJve">player</field></block></value><value name="value"><shadow type="math_number"><field name="NUM">100</field></shadow></value><next><block type="Sprite_blockCombine_set"><field name="property">Sprite.y@set</field><value name="mySprite"><block type="variables_get"><field name="VAR" id="}S!vvL7D]DKuU4{,EJve">player</field></block></value><value name="value"><shadow type="math_number"><field name="NUM">0</field></shadow></value><next><block type="gamesetbackgroundcolor"><value name="color"><shadow type="colorindexpicker"><field name="index">9</field></shadow></value><next><block type="variables_set"><field name="VAR" id=";J0b9wZ[Gt!d(?]$|b@E">trampoline</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritetype"><field name="MEMBER">2Trampoline</field></shadow></value></block></value><next><block type="variables_set"><field name="VAR" id=";J0b9wZ[Gt!d(?]$|b@E">trampoline</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritetype"><field name="MEMBER">2Trampoline</field></shadow></value></block></value><next><block type="variables_set"><field name="VAR" id=";J0b9wZ[Gt!d(?]$|b@E">trampoline</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritetype"><field name="MEMBER">2Trampoline</field></shadow></value></block></value></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="spritesoncreated" x="590" y="0"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">trampoline</field></shadow></value><value name="kind"><shadow type="spritetype"><field name="MEMBER">Trampoline</field></shadow></value><statement name="HANDLER"><block type="spritesetimage"><value name="sprite"><block type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">trampoline</field></block></value><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 
+4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 
+. . . . . . . . . . . . . 4 4 4 4 4 4 . . . . . . . . . . . . . 
+. . . . . . . . . . . 4 4 4 4 4 4 4 4 4 4 . . . . . . . . . . . 
+. . . . . . . . 4 4 4 4 4 . . . . . . 4 4 4 4 4 . . . . . . . . 
+. . . . . 4 4 4 4 4 . . . . . . . . . . . . 4 4 4 4 4 . . . . . 
+. . . 4 4 4 4 . . . . . . . . . . . . . . . . . . 4 4 4 4 . . . 
+4 4 4 4 . . . . . . . . . . . . . . . . . . . . . . . . 4 4 4 4 
+. 4 4 4 4 4 . . . . . . . . . . . . . . . . . . . . 4 4 4 4 4 . 
+. . . . 4 4 4 4 4 . . . . . . . . . . . . . . 4 4 4 4 4 . . . . 
+. . . . . . . 4 4 4 4 4 . . . . . . . . 4 4 4 4 4 . . . . . . . 
+. . . . . . . . . 4 4 4 4 4 4 . . 4 4 4 4 4 4 . . . . . . . . . 
+. . . . . . . . . . . . 4 4 4 4 4 4 4 4 . . . . . . . . . . . . 
+4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 
+4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 
+4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 
+`</field></shadow></value><next><block type="Sprite_blockCombine_set"><field name="property">Sprite.bottom@set</field><value name="mySprite"><block type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">trampoline</field></block></value><value name="value"><block type="device_random"><value name="min"><block type="Sprite_blockCombine_get"><field name="property">Sprite.height</field><value name="mySprite"><block type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">trampoline</field></block></value></block></value><value name="limit"><block type="scenescreenheight"/></value></block></value><next><block type="Sprite_blockCombine_set"><field name="property">Sprite.x@set</field><value name="mySprite"><block type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">trampoline</field></block></value><value name="value"><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><block type="scenescreenwidth"/></value></block></value></block></next></block></next></block></statement></block><block type="gameupdate" x="660" y="300"><statement name="HANDLER"><block type="Sprite_blockCombine_change"><field name="property">Sprite.x@set</field><value name="mySprite"><block type="variables_get"><field name="VAR" id="}S!vvL7D]DKuU4{,EJve">player</field></block></value><value name="value"><block type="keydx"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation></block></value></block></statement></block><block type="spritesoverlap" x="0" y="520"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritetype"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritetype"><field name="MEMBER">Trampoline</field></shadow></value><statement name="HANDLER"><block type="hudChangeScoreBy"><value name="value"><shadow type="math_number"><field name="NUM">1</field></shadow></value><next><block type="Sprite_blockCombine_set"><field name="property">Sprite.vy@set</field><value name="mySprite"><block type="variables_get"><field name="VAR" id="}S!vvL7D]DKuU4{,EJve">player</field></block></value><value name="value"><shadow type="math_number"><field name="NUM">-100</field></shadow></value><next><block type="spritedestroy"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></block></value><next><block type="variables_set"><field name="VAR" id=";J0b9wZ[Gt!d(?]$|b@E">trampoline</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritetype"><field name="MEMBER">2Trampoline</field></shadow></value></block></value></block></next></block></next></block></next></block></statement></block></xml>
